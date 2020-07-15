@@ -1,0 +1,99 @@
+body
+{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    }
+.heading h1
+{
+    margin:0;
+    color: red;
+    font-size:max(50pt);
+    display: inline;
+    font-family: "SHOWG";
+    text-align: center;
+    box-shadow: 5px 0px 10px ;
+    text-align: center;
+    cursor: pointer;
+
+}
+.heading 
+{
+    display: block;
+    position: absolute;
+    top:45%;
+    left:40%;
+    border-radius: 8px;
+}
+@keyframes fwebby
+{
+    0%{color: red;}
+    25%{color: #0d2c75;}
+    50%{color: #d448c1;}
+    75%{color: #81a39c;}
+}
+.heading h1{
+    cursor: pointer;
+    animation-name:fwebby;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@font-face
+{
+    src:url("SHOWG.TTF");
+    font-family:SHOWG;
+}
+ul
+{
+    
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    
+}
+ul li 
+{
+    font-size: 20px;
+    font-family: SHOWG;
+    list-style: none;
+    
+    
+    
+}
+ul li a
+{
+    text-decoration:none;
+    cursor: pointer;
+    padding: 20px;
+    
+}
+ul li a:link{
+    color:red;
+}
+ul li a:visited
+{
+    color: red;
+}
+ul li a:hover
+{
+    
+    background-color:#4d4d4d;
+    transition-timing-function: ease;
+    transition-duration: .5s;
+}
+@media (max-width:1080px)
+{
+    .heading
+    {
+        position: absolute;
+        left: 35%
+    }
+    .heading h1
+    {
+        font-size: 30pt; 
+    }
+}
